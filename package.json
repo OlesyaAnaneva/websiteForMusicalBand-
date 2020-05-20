@@ -1,0 +1,30 @@
+{
+  "name": "websiteForMusicalBand-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js -e hbs,css,js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlesyaAnaneva/websiteForMusicalBand-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OlesyaAnaneva/websiteForMusicalBand-/issues"
+  },
+  "homepage": "https://github.com/OlesyaAnaneva/websiteForMusicalBand-#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "mongoose": "^5.9.15",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
