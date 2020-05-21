@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+
+.table-dark {
+  height: 100px;
+  animation: flipInX;
+  animation-duration: 2s;
+  /* animation-delay: 1s; */
+}
+
+.table tr {
+  /* margin-top: 200px; */
+}
+
+#title {
+  width: 100%;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 3em;
+  font-family: 'Poiret One', cursive;
+  text-align: center;
+  font-size: x-large;
+}
+
+#title p {
+  background-color: black;
+  color: white;
+  width: 31%;
+  margin-top: 1%;
+}
