@@ -1,0 +1,10 @@
+.video-container {
+  display: inline-flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.videoDiv {
+  width: 20px;
+  height: 20px;
+}

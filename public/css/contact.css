@@ -1,0 +1,20 @@
+.card {
+  height: 200px !important;
+  background-color: #343a40;
+}
+
+.card-container {
+  display: inline-flex;
+}
+
+.text-info {
+  color: white !important;
+}
+
+.border-info {
+  border-color: #343a40 !important;
+}
+
+.card-header {
+color: white;
+}
