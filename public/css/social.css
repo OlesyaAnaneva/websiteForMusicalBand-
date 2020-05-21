@@ -1,19 +1,4 @@
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-
-<div class="wrapper">
-  <ul>
-    <li class="facebook"><a href="https://www.facebook.com/pg/dobrorkestr/posts/?ref=page_internal"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
-    <li class="youtube"><a href="https://www.youtube.com/channel/UCeJWA99_qfr3VF13VuphR8A"><i class="fa fa-youtube fa-2x " aria-hidden="true"></i></a></li>
-    <li class="vk"><a href="https://vk.com/dobr_orkestr"><i class="fa fa-vk fa-2x" aria-hidden="true"></i></a></li>
-    <li class="instagram"><a href="https://ru-ru.facebook.com/help/instagram/155940534568753?helpref=hc_fnav"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
-    <li class="whatsapp"><a href="#"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a></li>
-  </ul>
-</div>
-
-
-<style>
-  * {
+* {
   margin: 0;
   padding: 0;
 }
@@ -26,8 +11,8 @@ body {
 it should always be at the center of the browser */
 .wrapper {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 5%;
+  left: 58%;
   transform: translate(-50%, -50%);
   width: 550px;
 }
@@ -41,8 +26,8 @@ it should always be at the center of the browser */
   and float them to left and set its border and border-radius.
  */
 .wrapper ul li {
-  width: 75px;
-  height: 75px;
+  width: 40px;
+  height: 40px;
   line-height: 75px;
   margin: 0 10px;
   text-align: center;
@@ -128,6 +113,31 @@ to align it properly */
   transition: all 0.5s ease;
 }
 
+.fa-facebook:before {
+  position: relative;
+  top: -23px;
+}
+
+.fa-youtube:before {
+  position: relative;
+  top: -23px;
+}
+
+.fa-instagram:before {
+  position: relative;
+  top: -23px;
+}
+
+.fa-vk:before {
+  position: relative;
+  top: -23px;
+}
+
+.fa-whatsapp:before {
+  position: relative;
+  top: -23px;
+}
+
 
 /* media queries */
 
@@ -155,4 +165,3 @@ to align it properly */
       margin-left: 15px;
   }
 }
-</style>
