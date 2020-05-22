@@ -14,9 +14,9 @@ app.set("view engine", "hbs");
 app.use(express.static(path.join(__dirname, "public")));
 // /////////////
 // mongodb+srv://userBoris:asdf123ZXCV@dobrovolnorc-entew.mongodb.net/test
-mongoose.connect("mongodb+srv://userBoris:asdf123ZXCV@dobrovolnorc-entew.mongodb.net/test", {
-  useNewUrlParser: true,
-});
+// mongoose.connect("mongodb+srv://userBoris:asdf123ZXCV@dobrovolnorc-entew.mongodb.net/DobrovolnOrc", {
+//   useNewUrlParser: true,
+// });
 // /////
 app.use(logger("dev"));
 app.use(express.json());
