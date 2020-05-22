@@ -3,7 +3,9 @@ const contactModel = require('../models/contactModel');
 
 router.get("/", async (req, res) => {
   const contactdata = await contactModel.find().update();
-  res.render("index", { contacts: contactdata });
+  console.log(contactdata);
+  
+  res.render("index", {  });
 });
 
 router.get("/contactBack", (req, res) => {
