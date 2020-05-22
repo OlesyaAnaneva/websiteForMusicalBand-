@@ -1,4 +1,86 @@
 {{!-- <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'> --}}
+<div class="invert-button"><style id="inverter" media="none">
+  html { background-color: #eee; filter: invert(100%) }
+  * { background-color: inherit }
+  img:not([src*=".svg"]), [style*="url("] { filter: invert(100%) }
+</style>
+<div class="wrap">
+  <label class="button">
+    <input type="checkbox" id="themer">
+    Dark theme: <span aria-hidden="true"></span>
+  </label>
+</div>
+<style>
+  .invert-button {
+    width: 276px;
+    height: 20px;
+    position: absolute;
+    top: 0%;
+    left: -2%;
+  }
+  html {
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #222;
+  height: 100%;
+}
+
+.wrap {
+  margin: 0;
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+* {
+  margin: 0;
+  color: inherit; 
+}
+
+* + *:not(li):not(body) {
+  margin-top: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+  
+.box {
+  padding: 1.5rem;
+  border: 2px solid;
+  background-color: #ccc;
+}
+
+.button {
+  background: #000;
+  padding: 0.5rem 1.5rem;
+  color: #fff;
+  border-radius: 0.25rem;
+}
+
+.button [type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.button [type="checkbox"] + span::before {
+  content: 'on';
+}
+
+.button [type="checkbox"]:checked + span::before {
+  content: 'off';
+}
+</style>
+<script>var checkbox = document.getElementById('themer');
+var invertor = document.getElementById('inverter');
+
+checkbox.addEventListener('change', function () {
+  // Triggers repaint in most browsers:
+  invertor.setAttribute('media', this.checked ? 'screen' : 'none');
+  // Forces repaint in Chrome:
+  invertor.textContent = invertor.textContent.trim();
+});</script></div>
 <div class="wrapper">
   <ul>
     <li class="icon"><a><img class="iconNav" src="images/icon.png"></a></li>
@@ -13,13 +95,12 @@
   </ul>
 </div>
 <div id="navbar">
-  <a href="#card-container-about" class="btn">О нас</a>
+  <a href="#card-container-about" class="btn onas">О нас</a>
   <a href="#" class="btn">Новости</a>
   <a href="#" class="btn">Проекты</a>
   <a href="#card-container-afisha" class="btn">Афиша</a>
   <a href="#video-container" class="btn">Видео</a>
   <a href="#containerAudio" class="btn">Музыка</a>
-  <a href="#photoContainer" class="btn">Фотографии</a>
   <a href="#" class="btn">Пресса</a>
   <a href="#card-container" class="btn">Контакты</a>
 </div>
@@ -56,6 +137,12 @@
     letter-spacing: 2px;
     text-transform: uppercase;
   }
+  .onas {
+    margin-top: 24px;
+  }
+  {{!-- #navbar {
+    margin: 0;
+  } --}}
 
   .btn:hover {
     border: none;
