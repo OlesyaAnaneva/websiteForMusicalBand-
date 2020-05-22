@@ -1,31 +1,31 @@
 {{!-- <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'> --}}
 <div class="invert-button"><style id="inverter" media="none">
-  html { background-color: #eee; filter: invert(100%) }
+  html:not(.videoDiv) { background-color: #eee; filter: invert(100%) }
   * { background-color: inherit }
-  img:not([src*=".svg"]), [style*="url("] { filter: invert(100%) }
+  img:not([src*=".svg"]):not(.videoDiv), [style*="url("] { filter: invert(100%) }
 </style>
 <div class="wrap">
   <label class="button">
     <input type="checkbox" id="themer">
-    Dark theme: <span aria-hidden="true"></span>
+    Светлая тема: <span aria-hidden="true"></span>
   </label>
 </div>
 <style>
-  .invert-button {
+  .invert-button:not(.videoDiv) {
     width: 276px;
     height: 20px;
-    position: absolute;
+    position:static;
     top: 0%;
-    left: -2%;
+    left:-2%;
   }
-  html {
+  html:not(.videoDiv) {
   font-family: sans-serif;
   line-height: 1.5;
   color: #222;
   height: 100%;
 }
 
-.wrap {
+.wrap:not(.videoDiv) {
   margin: 0;
   max-width: 40rem;
   margin: 0 auto;
@@ -41,35 +41,35 @@
   margin-top: 1.5rem;
 }
 
-img {
+img:not(.videoDiv) {
   max-width: 100%;
   height: auto;
 }
   
-.box {
+.box:not(.videoDiv) {
   padding: 1.5rem;
   border: 2px solid;
   background-color: #ccc;
 }
 
-.button {
+.button:not(.videoDiv) {
   background: #000;
   padding: 0.5rem 1.5rem;
   color: #fff;
   border-radius: 0.25rem;
 }
 
-.button [type="checkbox"] {
+.button:not(.videoDiv) [type="checkbox"] {
   position: absolute;
   left: -9999px;
 }
 
-.button [type="checkbox"] + span::before {
-  content: 'on';
+.button:not(.videoDiv) [type="checkbox"] + span::before {
+  content: 'off';
 }
 
-.button [type="checkbox"]:checked + span::before {
-  content: 'off';
+.button:not(.videoDiv) [type="checkbox"]:checked + span::before {
+  content: 'on';
 }
 </style>
 <script>var checkbox = document.getElementById('themer');
@@ -83,7 +83,7 @@ checkbox.addEventListener('change', function () {
 });</script></div>
 <div class="wrapper">
   <ul>
-    <li class="icon"><a><img class="iconNav" src="images/icon.png"></a></li>
+    {{!-- <li class="icon"><a><img class="iconNav" src="images/icon.png"></a></li> --}}
     <li class="facebook"><a href="https://www.facebook.com/pg/dobrorkestr"><i
           class="fa fa-facebook " aria-hidden="true"></i></a></li>
     <li class="youtube"><a href="https://www.youtube.com/channel/UCeJWA99_qfr3VF13VuphR8A"><i class="fa fa-youtube "
@@ -113,7 +113,7 @@ checkbox.addEventListener('change', function () {
   .iconNav {
     width: 40px;
     height: 40px;
-    margin-left: -5px;
+    margin-left: -3%;
     margin-top: -47px;
   }
 
@@ -165,7 +165,6 @@ checkbox.addEventListener('change', function () {
   }
 </style>
 
-s
 <script>
   // When the user scrolls the page, execute myFunction
   window.onscroll = function () { myFunction() };
