@@ -1,8 +1,24 @@
+<h1>Добровольный Оркестр Хемулей</h1>
+<link href="http://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet" type="text/css">
+
 <style>
   * {
     box-sizing: border-box;
   }
+h1{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color:#999;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 2em;
+  font-family: 'Poiret One', cursive;
+  text-align: center;
+  font-size:80px;
 
+}
   body {
     font-family: Verdana, sans-serif;
   }
@@ -90,16 +106,23 @@
   <div class="slideshow-container">
 
     <div class="mySlides fade">
+      <img src="images/group1.jpg">
+    </div>
+        <div class="mySlides fade">
+      <img src="images/group2.jpg">
+    </div>
+
+    <div class="mySlides fade">
       <img src="images/co3.jpg">
     </div>
 
-    <div class="mySlides fade">
+ {{!-- <div class="mySlides fade">
       <img src="images/concert.jpg">
-    </div>
+    </div> --}}
 
-    <div class="mySlides fade">
+    {{!-- <div class="mySlides fade">
       <img src="images/co.jpg">
-    </div>
+    </div>  --}}
 
   </div>
   <br>
@@ -127,7 +150,7 @@
       }
       slides[slideIndex - 1].style.display = "block";
       dots[slideIndex - 1].className += " active";
-      setTimeout(showSlides, 4000); // Change image every 2 seconds
+      setTimeout(showSlides, 2500); // Change image every 2 seconds
     }
 
   </script>
