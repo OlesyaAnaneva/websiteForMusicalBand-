@@ -113,6 +113,17 @@ to align it properly */
   transition: all 0.5s ease;
 }
 
+.wrapper ul li:hover.icon {
+  border: 5px solid #FFFFFF;
+  box-shadow: 0 0 15px #BFCDCA;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-icon {
+  color: #BFCDCA;
+  text-shadow: 0 0 15px #BFCDCA;
+  transition: all 0.5s ease;
+}
 .fa-facebook:before {
   position: relative;
   top: -23px;

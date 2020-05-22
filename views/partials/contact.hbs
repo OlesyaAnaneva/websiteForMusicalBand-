@@ -1,24 +1,51 @@
+<h2 class="contactss">Контакты</h2>
 <div class="card-container" id="card-container">
-<div class="card border-info mb-3 card-contact" style="max-width: 18rem;">
-  <div class="card-header">Менеджер</div>
-  <div class="card-body text-info">
-    <p class="card-title">Татьяна</p>
-    <p class="card-title">EMAIL: tatuana@mail.ru</p>
-    <p class="card-text">т. +7 988 343 54 35
-    </p>
+
+
+  <div class="card border-info mb-3 card-contact" style="max-width: 18rem;">
+    <div class="card-header"><b>Организатор, вдохновитель, производитель идей и беспорядка.</b></div>
+    <div class="card-body text-info">
+      <p class="card-title">Борис Фаддеев</p>
+      <p class="card-title">E-mail: <a href="mailto:https://vk.com/brain_spb"> https://vk.com/brain_spb</a></p>
+      <p class="card-title">Tel.: 7 964 336-02-10</p>
+    </div>
   </div>
+
+  <div class="card border-info mb-3 card-contact" style="max-width: 18rem;">
+    <div class="card-header"><b>Директор</b></div>
+    <div class="card-body text-info">
+      <p class="card-title">Иван Иванович</p>
+
+      <p class="card-title">E-mail:
+        <!-- VK Widget -->
+        <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+
+      <div id="vk_contact_us"></div>
+      <script type="text/javascript">
+        VK.Widgets.ContactUs("vk_contact_us", {}, -16736325);
+      </script>
+      <!-- VK Widget -->
+      </p>
+      <p class="card-title">Tel.: +7 000 000 00 00</p>
+    </div>
+  </div>
+
+  <div class="card border-info2 mb-3 card-contact2" style="max-width: 18rem;">
+
+    <div class="vkPodp"></div>
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+
+    <!-- VK Widget -->
+    <div id="vk_groups"></div>
+    <script type="text/javascript">
+      VK.Widgets.Group("vk_groups", { mode: 3 }, 16736325);
+    </script>
+  </div>
+
+
+
 </div>
 
-<div class="card border-info mb-3 card-contact" style="max-width: 18rem;">
-  <div class="card-header">Директор</div>
-  <div class="card-body text-info">
-    <p class="card-title">Татьяна</p>
-    <p class="card-title">EMAIL: tatuana@mail.ru</p>
-    <p class="card-text">т. +7 988 343 54 35
-    </p>
-  </div>
-</div>
-</div>
 <style>
   .card {
     margin: 20px;
@@ -27,5 +54,19 @@
 
   .card-body {
     opacity: 0.9;
+  }
+
+  .contactss {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #999;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 2em;
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+    font-size: 80px;
   }
 </style>

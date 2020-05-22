@@ -1,20 +1,24 @@
 {{!-- <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'> --}}
 <div class="wrapper">
   <ul>
-    <li class="facebook"><a href="https://www.facebook.com/pg/dobrorkestr/posts/?ref=page_internal"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
-    <li class="youtube"><a href="https://www.youtube.com/channel/UCeJWA99_qfr3VF13VuphR8A"><i class="fa fa-youtube " aria-hidden="true"></i></a></li>
+    <li class="icon"><a><img class="iconNav" src="images/icon.png"></a></li>
+    <li class="facebook"><a href="https://www.facebook.com/pg/dobrorkestr"><i
+          class="fa fa-facebook " aria-hidden="true"></i></a></li>
+    <li class="youtube"><a href="https://www.youtube.com/channel/UCeJWA99_qfr3VF13VuphR8A"><i class="fa fa-youtube "
+          aria-hidden="true"></i></a></li>
     <li class="vk"><a href="https://vk.com/dobr_orkestr"><i class="fa fa-vk " aria-hidden="true"></i></a></li>
-    <li class="instagram"><a href="https://ru-ru.facebook.com/help/instagram/155940534568753?helpref=hc_fnav"><i class="fa fa-instagram " aria-hidden="true"></i></a></li>
-    <li class="whatsapp"><a href="#"><i class="fa fa-whatsapp " aria-hidden="true"></i></a></li>
+    <li class="instagram"><a href="https://ru-ru.facebook.com/help/instagram/155940534568753?helpref=hc_fnav"><i
+          class="fa fa-instagram " aria-hidden="true"></i></a></li>
+    <li class="whatsapp"><a href="https://api.whatsapp.com/send?phone=79643360210&data=Abtq5E3QdaKQ3Fsu_ED0gDmMGMcUD9dQXewLtzJx_YNw07QUzxpWPIas43em62A08TRO3dna__Q8BMGXS81y5eQbZXNwmarvvZJsX1XIo_U4Fnutlo3N1t8ek9yCot10Orw&source=FB_Ads"><i class="fa fa-whatsapp " aria-hidden="true"></i></a></li>
   </ul>
 </div>
 <div id="navbar">
-<a href="#" class="btn">О нас</a>
-<a href="#" class="btn">Музыка</a>
-<a href="#video-container" class="btn">Видео</a>
-<a href="#" class="btn">Фотографии</a>
-<a href="#" class="btn">Афиша</a>
-<a href="#card-container" class="btn">Контакты</a>
+  <a href="#card-container-about" class="btn">О нас</a>
+  <a href="#containerAudio" class="btn">Музыка</a>
+  <a href="#video-container" class="btn">Видео</a>
+  <a href="#photoContainer" class="btn">Фотографии</a>
+  <a href="#card-container-afisha" class="btn">Афиша</a>
+  <a href="#card-container" class="btn">Контакты</a>
 </div>
 <style>
   * {
@@ -25,11 +29,19 @@
     -moz-transition-timing-function: cubic-bezier(100, 50, 21, 6);
   }
 
+  .iconNav {
+    width: 40px;
+    height: 40px;
+    margin-left: -5px;
+    margin-top: -47px;
+  }
+
   body {
     background: #1b1b2b;
     padding: 75px;
     text-align: center;
     font-family: 'Oswald', sans-serif;
+
   }
 
   .btn {
@@ -69,20 +81,20 @@
 s
 <script>
   // When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+  window.onscroll = function () { myFunction() };
 
-// Get the navbar
-var navbar = document.getElementById("navbar");
+  // Get the navbar
+  var navbar = document.getElementById("navbar");
 
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
+  // Get the offset position of the navbar
+  var sticky = navbar.offsetTop;
 
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
+  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
   }
-}
 </script>
