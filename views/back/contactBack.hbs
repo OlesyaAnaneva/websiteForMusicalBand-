@@ -1,8 +1,21 @@
 <h2 class="contactss">Контакты</h2>
-<div class="card-container" id="card-container">
+{{!-- <div class="card-container" id="card-container"> --}}
 
 
-<div class="card border-info mb-3 card-contact" style="max-width: 18rem;">{{#each contacts}}
+<form method="POST" action="/contactBack">
+<label>Должность:</label> <input name='job' type="text">
+<label>Имя:</label> <input name='nameJob' type="text">
+<label>E-mail:</label> <input name='emailJob' type="text">
+<label>Tel:</label> <input name='telJob' type="text">
+<input type="submit" value="опубликовать">
+</form>
+<style>
+label{
+  color: aliceblue;
+}
+</style>
+
+  {{!-- <div class="card border-info mb-3 card-contact" style="max-width: 18rem;">{{#each contacts}}
     <div class="card-header"><b>Организатор, вдохновитель, производитель идей и беспорядка. {{job}}</b></div>
     <div class="card-body text-info">
       <p class="card-title">Борис Фаддеев{{nameJob}}</p>
@@ -80,4 +93,4 @@
     text-align: center;
     font-size: 80px;
   }
-</style>
+</style> --}}
