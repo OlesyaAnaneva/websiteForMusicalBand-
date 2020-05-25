@@ -1,0 +1,81 @@
+<h2 id="abouttitle">Новости </h2>
+
+<p>Следите за нашими обновлениями в социальных сетях</p>
+<br>
+<div class="socialnets">
+
+  <div class="facebooknet">
+    <div>
+      <p>Мы в facebook <i class="fa fa-facebook" aria-hidden="true"></i>
+      </p>
+    </div>
+    {{!--facebook --}}
+    <iframe
+      src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fdobrorkestr%2F&tabs=timeline&width=300px&height=300px&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+      width="300px" height="300px" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+      allowTransparency="true" allow="encrypted-media"></iframe>
+    {{!--facebook --}}
+  </div>
+
+  <div class="instagramnet">
+    <div>
+      <p>Мы в Instagram <i class="fa fa-instagram" aria-hidden="true"></i> </p>
+    </div>
+    {{!--instagram --}}
+    <iframe
+      src="https://averin.pro/widget.php?l=dohemuli&style=1&width=250&gallery=1&s=300&icc=4&icr=3&t=0&tt=&h=1&ttcolor=ffffff&th=ffffff&bw=ffffff&bscolor=ffffff&bs=99cc00&ts=Подписаться&ch=utf8"
+      allowtransparency="true" frameborder="0" scrolling="no"
+      style="border:none;overflow:hidden;width:350px; height: 490px"></iframe>
+    {{!--instagram --}}
+  </div>
+
+  <div class="vknet">
+    <div>
+      <p>Мы в ВКонтакте <i class="fa fa-vk" aria-hidden="true"></i>
+      </p>
+    </div>
+    {{!--vk --}}
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+    <div id="vk_groups"></div>
+    <script type="text/javascript">
+      VK.Widgets.Group("vk_groups", { mode: 4, width: "300", height: "300" }, 16736325);
+    </script>
+    {{!--vk --}}
+  </div>
+
+
+</div>
+
+
+<style>
+  .socialnets {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+  }
+
+  .facebooknet {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .vknet {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+
+  .instagramnet {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+</style>

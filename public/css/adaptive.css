@@ -1,8 +1,54 @@
 @media (min-width: 768px) and (max-width: 1200px) {
   body {
-    display: flex inline-block;
+    /* display: flex inline-block; */
     flex-wrap: wrap;
-    width: 50%;
+    justify-content: center;
+    padding: 10px;
+  }
+  #navbar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+  }
+  .btn {
+    padding: 0px;
+  }
+  h1 {
+    font-size: 34px;
+  }
+  .iconFooter {
+    height: 100px;
+    margin-left: -100px;
+  }
+
+  h6,
+  .copyright-text {
+    font-size: 23px;
+  }
+  .text-justify,
+  a {
+    font-size: 23px;
+  }
+  .wrapper {
+    height: 300px;
+    width: 300px;
+  }
+  .facebooknet {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .vknet {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .instagramnet {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
   }
 }
 
@@ -10,50 +56,103 @@
   body {
     display: flex inline-block;
     flex-wrap: wrap;
-    width: 50%;
+    justify-content: center;
+    padding: 10px;
   }
-  .invert-button {
-    top: 2%;
-    left: -25%;
+  #navbar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+  }
+  .btn {
+    padding: 0px;
+  }
+  h1 {
+    font-size: 34px;
+  }
+  .iconFooter {
+    height: 100px;
   }
 
-  * {
-    box-sizing: none;
+  h6,
+  .copyright-text {
+    font-size: 23px;
   }
-  .card-container {
+  .text-justify,
+  a {
+    font-size: 23px;
+  }
+  .wrapper {
+    height: 300px;
+    width: 300px;
+  }
+  .facebooknet {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .vknet {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .instagramnet {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
   }
 }
 @media (min-width: 320px) and (max-width: 479px) {
   body {
     display: flex inline-block;
     flex-wrap: wrap;
-    width: 50%;
+    justify-content: center;
+    padding: 10px;
   }
   #navbar {
-    display: flex inline-block;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  .wrapper {
-    display: flex inline-block;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  .invert-button {
-    top: 2%;
-    left: -25%;
-  }
-  .name {
     display: flex;
     flex-wrap: wrap;
-    color: #fff;
-    font-size: 40px;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
   }
-  img {
-    object-fit: cover;
-    width: 320px;
-    height: 180px;
+  .btn {
+    padding: 0px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  .iconFooter {
+    height: 100px;
+  }
+
+  h6,
+  .copyright-text {
+    font-size: 16px;
+  }
+  .text-justify,
+  a {
+    font-size: 18px;
+  }
+  .wrapper {
+    height: 300px;
+    width: 300px;
+  }
+  .facebooknet {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .vknet {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .instagramnet {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
   }
 }
