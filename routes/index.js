@@ -1,29 +1,27 @@
 const router = require("express").Router();
-const contactModel = require('../models/contactModel');
 
 router.get("/",  (req, res) => {
-  // try {
-  //   const contactdata = await contactModel.find();
-  //   console.log(contactdata);
-  // } catch (err) {
-  //   console.log(err)
-  // }
   res.render("index");
 });
 
-// router.get("/contactBack", (req, res) => {
-//   res.render("back/contactBack");
-// });
+router.get("/about",  (req, res) => {
+  res.render("partials/about");
+});
 
-// router.post("/contactBack", async (req, res) => {
-//   await contactModel.remove();
-//   await contactModel.create({
-//     job: req.body.job,
-//     nameJob: req.body.nameJob,
-//     emailJob: req.body.emailJob,
-//     telJob: req.body.telJob,
-//   });
-//   res.redirect('/');
-// });
+router.get("/news",  (req, res) => {
+  res.render("partials/news");
+});
+
+router.get("/video",  (req, res) => {
+  res.render("partials/video");
+});
+
+router.get("/music",  (req, res) => {
+  res.render("partials/audio");
+});
+
+router.get("/contact",  (req, res) => {
+  res.render("partials/contact");
+});
 
 module.exports = router;
