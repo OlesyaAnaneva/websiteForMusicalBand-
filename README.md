@@ -10,4 +10,5 @@ npm start
 ```
 ## Authors:
 -[Olesya Ananeva] (https://github.com/OlesyaAnaneva)
+
 -[Ivan Peskov]  (https://github.com/Pesok24)
