@@ -9,6 +9,6 @@ npm i
 npm start
 ```
 ## Authors:
--[Olesya Ananeva] (https://github.com/OlesyaAnaneva)
+-[Olesya Ananeva](https://github.com/OlesyaAnaneva)
 
--[Ivan Peskov]  (https://github.com/Pesok24)
+-[Ivan Peskov](https://github.com/Pesok24)
