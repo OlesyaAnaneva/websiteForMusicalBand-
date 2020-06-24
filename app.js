@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const hbs = require("hbs");
 
-const port = process.env.PORT || '3000';
+const port = process.env.PORT || '3001';
 const logger = require("morgan");
 const mongoose = require("mongoose");
 const indexRouter = require("./routes/index");
