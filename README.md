@@ -16,6 +16,9 @@ npm start
 ## Welcome page:
 ![welcome page](https://github.com/OlesyaAnaneva/websiteForMusicalBand-/blob/master/public/images/music1.png)
 
+## About page:
+![About page](https://github.com/OlesyaAnaneva/websiteForMusicalBand-/blob/master/public/images/music%201about.png)
+
 ## Music page:
 ![Music page](https://github.com/OlesyaAnaneva/websiteForMusicalBand-/blob/master/public/images/music%201music.png)
 
